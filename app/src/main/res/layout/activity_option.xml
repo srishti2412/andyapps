@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#585858"
+    tools:context="com.example.hp.bibliophile.option">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:weightSum="1"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/cont"
+        android:layout_alignEnd="@+id/cont">
+
+        <RadioButton
+            android:id="@+id/ri"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:text="Rent In"
+            android:textSize="20dp"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent Out"
+            android:id="@+id/ro"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="20dp"
+            android:layout_weight="0.13"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select one of the following options"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="71dp"
+        android:text="Continue"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
